@@ -2,18 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:gravity="center"
+
               android:orientation="vertical">
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Уровень освещенности"
+              android:id="@+id/textlight"
+              android:textSize="50sp"/>
 
     <Button
             android:id="@+id/button_start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Старт" />
+            android:text="@string/start" />
 
     <Button
             android:id="@+id/button_stop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Стоп" />
+            android:text="@string/stop" />
+    <Button
+            android:id="@+id/button_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listsensor" />
+    <ScrollView android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/textviewall"
+                  android:textSize="20sp"/>
+    </ScrollView>
+
 </LinearLayout>
